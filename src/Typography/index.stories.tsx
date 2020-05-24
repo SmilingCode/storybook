@@ -30,7 +30,7 @@ export default {
 export function summary(): JSX.Element {
   return (
     <div style={{ margin: '32px' }}>
-      <Typography variant='overline'>h1</Typography>
+      <Typography variant='overline'>h111111</Typography>
       {heading1()}
       <Typography variant='overline'>h2</Typography>
       {heading2()}
