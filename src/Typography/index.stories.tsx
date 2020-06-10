@@ -12,7 +12,7 @@ function makeSample(variant: string, sampleText: string): () => JSX.Element {
     return (
       <Box my={2} mb={5}>
         <Typography variant={variant} color='textPrimary'>{sampleText}</Typography>
-        <br/>
+        <br />
         <Typography variant={variant} color='textSecondary'>{sampleText}</Typography>
       </Box>
     )
