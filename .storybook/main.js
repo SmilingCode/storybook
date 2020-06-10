@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   stories: ['../src/**/*.stories.tsx'],
@@ -10,15 +10,17 @@ module.exports = {
     '@storybook/addon-knobs/register',
     'storybook-addon-material-ui/register',
     '@storybook/addon-storysource',
-    '@storybook/addon-a11y',
+    '@storybook/addon-a11y'
   ],
-
+  typescript: {
+    reactDocgen: 'react-docgen'
+  },
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.scss$/,
       use: ['style-loader', 'css-loader', 'sass-loader'],
       include: path.resolve(__dirname, '../')
-    })
+    });
 
     config.module.rules.push({
       test: /\.(ts|tsx)$/,
@@ -26,9 +28,24 @@ module.exports = {
       options: {
         presets: [['react-app', { flow: false, typescript: true }]]
       }
-    })
-    config.resolve.extensions.push('.ts', '.tsx')
+    });
+    /**
+     * Fix the bug that props are not showing in doc
+     */
+    config.module.rules.push({
+      test: /\.(ts|tsx)$/,
+      use: [
+        {
+          loader: require.resolve('ts-loader')
+        },
+        // Optional
+        {
+          loader: require.resolve('react-docgen-typescript-loader')
+        }
+      ]
+    });
+    config.resolve.extensions.push('.ts', '.tsx');
 
-    return config
+    return config;
   }
-}
+};
