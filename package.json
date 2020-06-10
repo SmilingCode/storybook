@@ -12,7 +12,7 @@
   },
   "scripts": {
     "storybook": "start-storybook",
-    "build": "rm -rf dist && microbundle-crl --no-compress --format modern,cjs",
+    "build": "rm -rf dist && npm run build-lib && build-storybook",
     "build-storybook": "build-storybook -c .storybook -o .out",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepublish": "run-s build",
