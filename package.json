@@ -1,8 +1,8 @@
 {
-  "name": "catlab-ui",
+  "name": "catlab-ui-personal",
   "version": "0.1.0",
-  "description": "Catalyst Lab React Design System UI Components",
-  "author": "-",
+  "description": "Learn Storybook design system",
+  "author": "John",
   "repository": "-",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
@@ -50,6 +50,7 @@
     "@types/react-test-renderer": "^16.9.2",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
+    "auto": "^9.39.0",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^26.0.1",
     "babel-loader": "^8.1.0",
@@ -87,5 +88,6 @@
     "@material-ui/icons": "^4.9.1",
     "react-docgen-typescript-loader": "^3.7.2",
     "ts-loader": "^7.0.5"
-  }
+  },
+  "license": "MIT"
 }
