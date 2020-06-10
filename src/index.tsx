@@ -1,4 +1,3 @@
-import 'storybook-addon-material-ui/register';
 import theme from './theme';
 
 export { theme };

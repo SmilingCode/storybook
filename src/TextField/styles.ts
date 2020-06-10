@@ -1,7 +1,14 @@
-import { Theme } from '@material-ui/core/styles';
-import { GREY_1, GREY_2, GREY_3, PRIMARY_FOCUS, UI_ERROR } from '../colours';
+import {
+  GREY_1,
+  GREY_2,
+  GREY_3,
+  PRIMARY_FOCUS,
+  UI_ERROR,
+  TEXT_SECONDARY,
+  SECONDARY_MAIN
+} from '../colours';
 
-export function labelStyles(_theme: Theme) {
+export function labelStyles() {
   return {
     root: {
       height: '18px',
@@ -16,20 +23,20 @@ export function labelStyles(_theme: Theme) {
   };
 }
 
-export function helperStyles(theme: Theme) {
+export function helperStyles() {
   return {
     root: {
       height: '18px',
       fontWeight: 500,
       fontSize: '14px',
       lineHeight: '18px',
-      color: theme.palette.text.secondary,
+      color: TEXT_SECONDARY,
       marginTop: '24px'
     }
   };
 }
 
-export function inputStyles(theme: Theme) {
+export function inputStyles() {
   return {
     root: {
       '& .MuiOutlinedInput-input': {
@@ -63,11 +70,11 @@ export function inputStyles(theme: Theme) {
         }
       },
       '& .MuiInputBase-input': {
-        backgroundColor: theme.palette.secondary.main
+        backgroundColor: SECONDARY_MAIN
       },
       fontSize: 16,
       minWidth: '200px',
-      backgroundColor: theme.palette.secondary.main
+      backgroundColor: SECONDARY_MAIN
     }
   };
 }
