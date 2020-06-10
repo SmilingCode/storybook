@@ -2,6 +2,20 @@
 
 #### ⚠️ Pushed to `master`
 
+- changed build command (jjiang@fusionlabs.com.au)
+- config building with typescript (jjiang@fusionlabs.com.au)
+- export components in index.tsx (jjiang@fusionlabs.com.au)
+
+#### Authors: 1
+
+- John (jjiang@fusionlabs.com.au)
+
+---
+
+# v0.1.3 (Thu Jun 11 2020)
+
+#### ⚠️ Pushed to `master`
+
 - config building with typescript (jjiang@fusionlabs.com.au)
 - export components in index.tsx (jjiang@fusionlabs.com.au)
 
