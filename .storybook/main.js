@@ -12,9 +12,7 @@ module.exports = {
     '@storybook/addon-storysource',
     '@storybook/addon-a11y'
   ],
-  typescript: {
-    reactDocgen: 'react-docgen'
-  },
+
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.scss$/,

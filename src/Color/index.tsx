@@ -1,17 +1,17 @@
-import React from 'react'
-import Color from 'color'
-import Typography from '@material-ui/core/Typography'
-import Box from '@material-ui/core/Box'
-import Card from '@material-ui/core/Card'
-import CardContent from '@material-ui/core/CardContent'
+import React from 'react';
+import Color from 'color';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
 
 type Props = {
-  title: string
-  colorString: string
-}
+  title: string;
+  colorString: string;
+};
 
-export function ColorCard({ title, colorString }: Props): JSX.Element {
-  const color = Color(colorString)
+export default function ColorCard({ title, colorString }: Props): JSX.Element {
+  const color = Color(colorString);
 
   return (
     <Card
@@ -54,5 +54,5 @@ export function ColorCard({ title, colorString }: Props): JSX.Element {
         </Box>
       </CardContent>
     </Card>
-  )
+  );
 }
