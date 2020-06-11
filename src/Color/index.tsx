@@ -10,7 +10,7 @@ type Props = {
   colorString: string;
 };
 
-export default function ColorCard({ title, colorString }: Props): JSX.Element {
+export function ColorCard({ title, colorString }: Props): JSX.Element {
   const color = Color(colorString);
 
   return (
